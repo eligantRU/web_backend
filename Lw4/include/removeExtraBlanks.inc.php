@@ -2,23 +2,23 @@
     function getRemovedExtraBlanksString($str)
     {
         $str = trim($str);
-        $string = "";
+        $outString = "";
         $isSpace = false;
         for ($i = 0; $i < strlen($str); ++$i)
         {
             if ($str[$i] == ' ')
             {
-                if($isSpace == false)
+                if ($isSpace == false)
                 {
-                    $string = $string . $str[$i];
+                    $outString = $outString . $str[$i];
                 }
                 $isSpace = true;
             }
             else
             {
-                $string = $string . $str[$i];
+                $outString = $outString . $str[$i];
                 $isSpace = false;
             }
         }
-        return $string;
+        return $outString;
     }

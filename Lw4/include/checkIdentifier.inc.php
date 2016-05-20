@@ -1,7 +1,7 @@
 <?php
     function checkIdentifier($identifier)
     {
-        $isIdentifier = (!empty ($identifier) && ctype_alpha($identifier[0]));
+        $isIdentifier = (!empty($identifier) && ctype_alpha($identifier[0]));
         if ($isIdentifier)
         {
             $i = 1;

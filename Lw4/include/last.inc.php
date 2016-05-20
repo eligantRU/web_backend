@@ -1,9 +1,10 @@
 <?php
     function getLastChar($str)
     {
-        if (!empty($str))
+        $ch = "";
+        if (strlen($str))
         {
-            return $str[strlen($str)-1];
+            $ch = $str[strlen($str) - 1];
         }
-        return "";
+        return $ch;
     }
