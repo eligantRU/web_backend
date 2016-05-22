@@ -5,4 +5,4 @@
     require_once('removeExtraBlanks.inc.php');
     require_once('checkIdentifier.inc.php');
     require_once('passwordStrength.inc.php');
-    require_once('passwordStrengthSecond.inc.php');
+    
